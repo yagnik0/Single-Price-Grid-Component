@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    font-size: 1.6rem;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grid-container{
+    max-width: 60rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+}
+
+/* Grid 1st column */
+.grid-1-col{
+    background-color: #fff;
+    grid-column: 1/4;
+    padding: 2rem;
+}
+
+.heading-1-col{
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+}
+
+.h2-1-col{
+    color:hsl(71, 73%, 54%);
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.para-1-col{
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+/* Grid 2nd Column  */
+.grid-2-col {
+    background-color: hsl(179, 62%, 43%);
+    padding: 2rem;
+    color: hsl(204, 43%, 93%);
+}
+
+.h2-2-col{
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1.2rem;
+}
+
+.para-2-col{
+    margin-bottom: 1.2rem;
+    font-weight: 100;
+}
+
+.para-2-col span{
+    font-size: 3rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.btn{
+    padding: 1.2rem 2.4rem;
+    width: 100%;
+    border-radius: 0.8rem;
+    border: none;
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    margin: 3rem 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/* Grid 3rd column */
+.grid-3-col {
+    background-color:hsl(179, 48%, 49%) ;
+    padding: 2rem;
+    grid-column: -3/-1;
+}
+
+.h2-3-col {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.para-3-col {
+    color: hsl(204, 43%, 93%);
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+
+@media only screen and (max-width:600px){
+    .grid-container{
+        min-height: 35rem;
+        width: 70%;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+    }
+    .main-container{
+        height: auto;
+    }
+}
